@@ -97,40 +97,98 @@
 # print("Power:", power)
 
 
-14/5/26
+# 14/5/26
+# #1
+# print("******")
+# print("*    *")
+# print("*    *")
+# print("*    *")
+# print("*    *")
+# print("******")
+
+# #2
+# print("*******")
+# print("*******")
+# print("*******")
+# print("*******")
+# print("*******")
+# print("*******")
+
+# #3
+# print("######")
+# print("#    #")
+# print("#    #")
+# print("#    #")
+# print("######")
+
+# #4
+# print("#######")
+# print("#######")
+# print("#######")
+# print("#######")
+# print("#######")
+# print("#######")
+# print("#######")
+
+# #5
+# n = 6
+# for i in range(1, n+1):
+#      print((str(i) + " ")* i)
+     
+# #6
+# print("    *    ")
+# print("   * *   ")
+# print("  *   *  ") 
+# print(" *     * ")  
+# print("***   ***")
+# print("  *   *  ")
+# print("  *   *  ")
+# print("  *****  ")
+  
+  
+16/5/26
+
 #1
-print("******")
-print("*    *")
-print("*    *")
-print("*    *")
-print("*    *")
-print("******")
+a = 10
+b = 20
+
+print("Sum =", a + b)
 
 #2
-print("*******")
-print("*******")
-print("*******")
-print("*******")
-print("*******")
-print("*******")
+a = 80 
+b = 30
+
+print("Difference =", a - b)
 
 #3
-print("######")
-print("#    #")
-print("#    #")
-print("#    #")
-print("######")
+a = 20
+b = 10
+
+print("Multiplication =", a * b)
 
 #4
-print("#######")
-print("#######")
-print("#######")
-print("#######")
-print("#######")
-print("#######")
-print("#######")
+a = 50
+b = 5
 
-#5
-n = 6
-for i in range(1, n+1):
-     print((str(i) + " ")* i)
+print("Division =", a / b)
+
+#5 
+a = 98
+b = 3
+
+print("Floor_division =", a // b)
+
+#6
+a = 100
+b = 3
+
+print("Remainder =", a % b)
+
+#7
+a = 5
+b = 2
+
+print("Power =", a ** b)
+
+
+  
