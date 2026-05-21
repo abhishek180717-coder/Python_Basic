@@ -55,6 +55,9 @@ board[6] = ["PAWN" for i in range(8)]
 
 print("**********")
 for index in board:
-    print(index)    
-
+    print(index)
+    
+temp = [[0.0 for h in range(24)] for d in range(24)]        
+for index in temp:
+    print(index)
 
