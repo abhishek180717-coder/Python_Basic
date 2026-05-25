@@ -84,9 +84,97 @@
 # message("price", 5)
 # message("number", "number")
 
-def introduction(first_name, last_name):
-    print("Hello, My name is", first_name, last_name)
+# def introduction(first_name, last_name):
+#     print("Hello, My name is", first_name, last_name)
  
-introduction("Luke", "Skywalker")
-introduction("Jesse", "Quick")
-introduction("Clark", "Kent")
+# introduction("Luke", "Skywalker")
+# introduction("Jesse", "Quick")
+# introduction("Clark", "Kent")
+
+# def introduction(first_name, last_name):
+#     print("Hello, my name is", first_name, last_name)
+    
+# introduction(first_name = "James", last_name = "Bond")
+# introduction(last_name = "Skywalker", first_name = "Luke")
+
+# def adding(a, b, c):
+#     print(a, "+", b, "+", c, "=", a + b + c)
+    
+# adding(1, 2, 3)
+# adding(c =1, a = 2, b = 3)
+# adding(3, c = 1, b = 2)
+# adding(1, a = 2, b = 3)
+
+# def happy_new_year(wishes = True):
+#     print("Three...")
+#     print("Two...")
+#     print("One...")
+#     if not wishes:
+#         return
+#     print("Happy New Year!")
+# happy_new_year()
+
+
+# happy_new_year(False)     
+
+# def boring_function():
+#     print("'Boredom Mode' ON.")
+#     return 123
+
+# print("This lesson is interesting!")
+# boring_function()
+# print("This lesson is boring...")  
+
+# def checkMyVar(variable):
+#     if (variable == 10):
+#         print("Variable is 10")
+#         return 2
+#     else:
+#         print("Variable is not up to the mark")
+#         return
+# print(checkMyVar(5)) 
+
+
+# def chechMyVar(variable):
+#     if (variable == 10):
+#         print("Variable is 10")
+#         return 2
+#     else:
+#         print("Variable is not up to the mark")
+#         return
+    
+# chechMyVar(10)    
+# print()
+
+
+
+# def list_sum(lst):
+#     sum = 0
+    
+#     for elem in lst:
+#         sum += elem
+        
+#     return sum
+# print(list_sum([5, 4, 3, 2, 1]))
+
+
+# def strange_list_fun(n):
+#     strange_list = []
+    
+#     for i in range(0, n):
+#         strange_list.append(i+1)
+        
+#     return strange_list
+# print(strange_list_fun(5))   
+
+
+
+def strange_list_fun(n):
+    strange_list = []
+    
+    for i in range(0, n):
+        strange_list.insert(0, i+1)
+        #strange_list.append(i+1)
+        
+    return strange_list
+print(strange_list_fun(5))  
