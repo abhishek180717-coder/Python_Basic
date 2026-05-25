@@ -146,49 +146,261 @@
 # print("  *****  ")
   
   
-16/5/26
+# 16/5/26
 
+# #1
+# a = 10
+# b = 20
+
+# print("Sum =", a + b)
+
+# #2
+# a = 80 
+# b = 30
+
+# print("Difference =", a - b)
+
+# #3
+# a = 20
+# b = 10
+
+# print("Multiplication =", a * b)
+
+# #4
+# a = 50
+# b = 5
+
+# print("Division =", a / b)
+
+# #5 
+# a = 98
+# b = 3
+
+# print("Floor_division =", a // b)
+
+# #6
+# a = 100
+# b = 3
+
+# print("Remainder =", a % b)
+
+# #7
+# a = 5
+# b = 2
+
+# print("Power =", a ** b)
+
+
+#24/05/26
 #1
-a = 10
-b = 20
+# numbers = [1, 2, 3, 4, 5]
+# print(len(numbers))
 
-print("Sum =", a + b)
+# numbers.pop()
+
+# numbers[len(numbers)//2] = int(input("Enter a number:"))
+
+# print(numbers)
+
+
+# #2
+# beatles = []
+
+# beatles.append("John Lennon")
+# beatles.append("Paul McCartney")
+# beatles.append("George Harrison")
+
+# print("Current band members:", beatles)
+
+# for member in ["Stu Sutcliffe", "Pete Best"]:
+#     beatles.append(member)
+# print("After adding new members:",beatles)
+
+# del beatles[-1]
+# del beatles[-1]
+
+# print("After removing members:", beatles)
+
+# beatles.insert(0, "Ringo Starr")
+
+# print("Final Beatles list:")
+# print(beatles)
+# print("Number of members:", len (beatles))
+
+
+# #3
+# for i in range(1, 51):
+
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizBuzz", end=", ")
+
+#     elif i % 3 == 0:
+#         print("Fiz", end=", ")
+
+#     elif i % 5 == 0:
+#         print("Buzz", end=", ")
+
+#     else:
+#         print(i, end=", ")
+
+# #4
+# string = "MindCoders password2 is : 1234"
+
+# count = 0
+
+# for ch in string:
+#     if ch.isdigit():
+#         count += 1
+
+# print("Total number of Digits =", count)
+
+# #5
+# string = "U r a a n S 0 f t s k i l l 1 s 1234"
+
+# count = 0
+
+# for ch in string:
+#     if ch.isdigit():
+#         count += 1
+
+# print("Total number of Digits =", count)
+
+# #6
+# string = "MindCoders"
+
+# count = 0
+
+# for ch in string:
+#     if ch == 's' or ch == 'S':
+#         count += 1
+
+# print("Total count =", count)
+
+# #7.1
+# string = "UraanSoftskills"
+
+# repeated = 0
+# unique = 0
+
+# for ch in string:
+#     if string.count(ch) > 1:
+#         repeated += 1
+#     else:
+#         unique += 1
+
+# print("Repeated characters =", repeated)
+# print("Unique characters =", unique)
+
+# #7.2
+# string = "UraanSoftskills"
+
+# for ch in string:
+#     print(ch, "=", string.count(ch))
+
+# #7.3
+# user_word = input("Enter a word: ")
+
+# user_word = user_word.upper()
+
+# word_without_vowels = ""
+
+# for letter in user_word:
+
+#     if letter == "A":
+#         continue
+#     elif letter == "E":
+#         continue
+#     elif letter == "I":
+#         continue
+#     elif letter == "O":
+#         continue
+#     elif letter == "U":
+#         continue
+
+#     word_without_vowels += letter
+
+# print(word_without_vowels)
+
+#24/5/26
+#1
+for i in range(1, 11):
+    print(i) 
 
 #2
-a = 80 
-b = 30
-
-print("Difference =", a - b)
-
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(i)    
+        
 #3
-a = 20
-b = 10
+sum = 0
 
-print("Multiplication =", a * b)
+for i in range(1, 16):
+    sum += i
+
+print("Sum =", sum)
 
 #4
-a = 50
-b = 5
+sum = 0
 
-print("Division =", a / b)
+for i in range(1, 16):
+    if i % 2 != 0:
+        sum += i
 
-#5 
-a = 98
-b = 3
+print("Sum of odd numbers =", sum)
 
-print("Floor_division =", a // b)
+#5
+num = 15
 
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
+    
 #6
-a = 100
-b = 3
+numbers = [1, 2, 4, 6, 88, 125]
 
-print("Remainder =", a % b)
-
+for i in numbers:
+    print(i)
+    
+    
 #7
-a = 5
-b = 2
+number = 129475
 
-print("Power =", a ** b)
+count = 0
 
+while number > 0:
+    number = number // 10
+    count += 1
 
-  
+print("Total digits =", count)
+
+#8
+string = "madam"
+
+if string == string[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")  
+    
+#9
+word = input("Enter a word: ")
+
+reverse = word[::-1]
+
+print("Reversed word =", reverse)     
+
+#10
+num = 153
+
+sum = 0
+temp = num
+
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp = temp // 10
+
+if sum == num:
+    print("Armstrong Number")
+else:
+    print("Not Armstrong Number")                
+
+ 
