@@ -169,12 +169,79 @@
 
 
 
-def strange_list_fun(n):
-    strange_list = []
+# def strange_list_fun(n):
+#     strange_list = []
     
-    for i in range(0, n):
-        strange_list.insert(0, i+1)
-        #strange_list.append(i+1)
+#     for i in range(0, n):
+#         strange_list.insert(0, i+1)
+#         #strange_list.append(i+1)
         
-    return strange_list
-print(strange_list_fun(5))  
+#     return strange_list
+# print(strange_list_fun(5))
+
+
+# def scope_test():
+#     x = 123
+# scope_test()
+# print(x)
+
+
+# def my_function():
+#     print("Do I know that variable?", var)
+    
+# var = 1
+# my_function()
+# print(var)     
+
+# def mult(x):
+#     var = 7
+#     return x * var
+# var = 3
+# print(mult(7))
+
+# def my_function():
+#     var = 2
+#     print("Do I know that variable?", var)
+# var = 1
+# my_function()
+# print(var)
+
+
+# def my_function():
+#     global var
+#     var = 2
+#     print("Do I know that variable?", var)
+# var = 1
+# my_function()
+# print(var)
+
+# var = 2
+# print(var)  #output: 2
+
+# def return_var():
+#     global var
+#     var = 5
+#     return var
+
+# print(return_var())  #output: 5
+# print(var)
+
+# def my_function(n):
+#     print("I got", n)
+#     n += 1
+#     print("I have", n)
+    
+# var = 1
+# my_function(var)
+# print(var)
+
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_1 = [0, 1]
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+    
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
