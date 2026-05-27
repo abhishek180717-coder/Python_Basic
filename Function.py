@@ -258,8 +258,10 @@
 # print("Print #5:", my_list_2)
 
 
-def message():
-    alt = 1
-    print("Hello, World")
+# def message():
+#     alt = 1
+#     print("Hello, World")
     
-print(alt)    
+# print(alt)    
+
+

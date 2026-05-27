@@ -322,85 +322,85 @@
 # print(word_without_vowels)
 
 #24/5/26
-#1
-for i in range(1, 11):
-    print(i) 
+# #1
+# for i in range(1, 11):
+#     print(i) 
 
-#2
-for i in range(1, 11):
-    if i % 2 == 0:
-        print(i)    
+# #2
+# for i in range(1, 11):
+#     if i % 2 == 0:
+#         print(i)    
         
-#3
-sum = 0
+# #3
+# sum = 0
 
-for i in range(1, 16):
-    sum += i
+# for i in range(1, 16):
+#     sum += i
 
-print("Sum =", sum)
+# print("Sum =", sum)
 
-#4
-sum = 0
+# #4
+# sum = 0
 
-for i in range(1, 16):
-    if i % 2 != 0:
-        sum += i
+# for i in range(1, 16):
+#     if i % 2 != 0:
+#         sum += i
 
-print("Sum of odd numbers =", sum)
+# print("Sum of odd numbers =", sum)
 
-#5
-num = 15
+# #5
+# num = 15
 
-for i in range(1, 11):
-    print(num, "x", i, "=", num * i)
+# for i in range(1, 11):
+#     print(num, "x", i, "=", num * i)
     
-#6
-numbers = [1, 2, 4, 6, 88, 125]
+# #6
+# numbers = [1, 2, 4, 6, 88, 125]
 
-for i in numbers:
-    print(i)
+# for i in numbers:
+#     print(i)
     
     
-#7
-number = 129475
+# #7
+# number = 129475
 
-count = 0
+# count = 0
 
-while number > 0:
-    number = number // 10
-    count += 1
+# while number > 0:
+#     number = number // 10
+#     count += 1
 
-print("Total digits =", count)
+# print("Total digits =", count)
 
-#8
-string = "madam"
+# #8
+# string = "madam"
 
-if string == string[::-1]:
-    print("Palindrome")
-else:
-    print("Not Palindrome")  
+# if string == string[::-1]:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")  
     
-#9
-word = input("Enter a word: ")
+# #9
+# word = input("Enter a word: ")
 
-reverse = word[::-1]
+# reverse = word[::-1]
 
-print("Reversed word =", reverse)     
+# print("Reversed word =", reverse)     
 
-#10
-num = 153
+# #10
+# num = 153
 
-sum = 0
-temp = num
+# sum = 0
+# temp = num
 
-while temp > 0:
-    digit = temp % 10
-    sum += digit ** 3
-    temp = temp // 10
+# while temp > 0:
+#     digit = temp % 10
+#     sum += digit ** 3
+#     temp = temp // 10
 
-if sum == num:
-    print("Armstrong Number")
-else:
-    print("Not Armstrong Number")                
+# if sum == num:
+#     print("Armstrong Number")
+# else:
+#     print("Not Armstrong Number")                
 
  
