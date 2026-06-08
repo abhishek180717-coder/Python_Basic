@@ -166,17 +166,62 @@
 #print("myObj.venomous:", myObj.venomous)
 
 #Name Mangling in Methods
-class Classy:
-    def visible(self):
-        print("visible")
+# class Classy:
+#     def visible(self):
+#         print("visible")
         
-    def __hidden(self):
-        print("hidden")
+#     def __hidden(self):
+#         print("hidden")
         
-obj = Classy()
-obj.visible()
-try:
-    obj,__hidden()
-except:
-    print("Failed")
-obj._Classy__hidden()                
+# obj = Classy()
+# obj.visible()
+# try:  
+#     obj,__hidden()
+# except:
+#     print("Failed")
+# obj._Classy__hidden()                
+
+
+# obj = Classy()
+# print(type(obj))
+# print(type(obj).__name__)
+
+
+
+# class Vehicle:
+#     pass
+
+# class LandVehicle(Vehicle):
+#     pass
+
+# class TrackedVehicle(LandVehicle):
+#     pass
+
+# my_vehicle = Vehicle()
+# my_land_vehicle = LandVehicle()
+# my_tracked_vehicle = TrackedVehicle()
+
+# for obj in [my_vehicle, my_land_vehicle, my_tracked_vehicle]:
+#     for cls in [ Vehicle, LandVehicle, TrackedVehicle]:
+#         print(isinstance(obj, cls), end="\t")
+#     print() 
+
+class SampleClass:
+    def __init__(self, val):
+        self.val = val
+        
+object_1 = SampleClass(0)        
+object_2 = SampleClass(2)            
+object_3 = object_1
+object_3.val += 1
+
+print(object_1 is object_2)
+print(object_2 is object_3)   
+print(object_3 is object_1)
+print(object_1.val, object_2.val, object_3.val)
+
+string_1 = "Marry had a little "
+string_2 = "Marry had a little lamb"
+string_1 += "lamb"
+
+print(string_1 == string_2, string_1 is string_2)
