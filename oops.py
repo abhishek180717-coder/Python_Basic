@@ -165,7 +165,7 @@
 #print("myObj.__venomous:", myObj.__venomous)
 #print("myObj.venomous:", myObj.venomous)
 
-#Name Mangling in Methods
+#Name Mangling in Methods:
 # class Classy:
 #     def visible(self):
 #         print("visible")
@@ -186,7 +186,7 @@
 # print(type(obj))
 # print(type(obj).__name__)
 
-#Inheritance:
+#Inheritance in OOPS:
   
 # class Vehicle:
 #     pass
@@ -310,18 +310,77 @@
 
 #Polymorphism in OOPS:
 
-class One:
-    def do_it(self):
-        print("do_it from One")
+# class One:
+#     def do_it(self):
+#         print("do_it from One")
         
-    def doanything(self):
-        self.do_it()
+#     def doanything(self):
+#         self.do_it()
         
-class Two(One):
-    def do_it(self):
-        print("do_it from Two")
+# class Two(One):
+#     def do_it(self):
+#         print("do_it from Two")
         
-one = One()
-two = Two()
-one.doanything()
-two.doanything()                                   
+# one = One()
+# two = Two()
+# one.doanything()
+# two.doanything() 
+
+                                  
+
+#Exceptions in OOPS:
+# def reciprocal(n):
+#     try:
+#         n = 1 / n
+#     except ZeroDivisionError:
+#         print("Division failed")
+#         return None
+#     else:
+#         print("Everything went fine")
+#         return n
+    
+# print("___________")
+# print("reciprocal(2): ", reciprocal(2))
+# print("______________")
+# print("reciprocal(0): ", reciprocal(0))
+# print("___________ ") 
+
+# def reciprocal(n):
+#     try:
+#         n = 1 / n
+#     except ZeroDivisionError:
+#         print("Division failed")
+#     else:
+#         print("Everything went fine")
+#     finally:
+#         print("This is always executed")    
+#     return n
+    
+# print("reciprocal(2):", reciprocal(2))
+# print("reciprocal(0):", reciprocal(0))  
+
+# try:
+#     i = int("Hello!")
+# except Exception as e:
+#     print(e)
+#     print(e.__str__())      
+
+# def print_exception_tree(thisclass, nest = 0):
+#     if nest > 1:
+#         print("   |" * (nest - 1), end="")
+#     if nest > 0:
+#         print("   +---", end="")
+#     print(thisclass.__name__)
+#     for subclass in thisclass.__subclasses__():
+#         print_exception_tree(subclass, nest + 1
+#                 )
+# print_exception_tree(BaseException)
+
+class MyZeroDivisionError(ZeroDivisionError):    
+    pass
+def do_the_division(mine):
+    if mine:
+        raise MyZeroDivisionError("some worse news")
+    else:        
+        raise ZeroDivisionError("some bad news")
+do_the_division(False)
