@@ -390,12 +390,64 @@
 
 #String:
 
-city = 'Bhopal'
-print(city[0])
-print(city[2])
+# city = 'Bhopal'
+# print(city[0])
+# print(city[2])
 
-print(city[-1])
-print(city[5])
+# print(city[-1])
+# print(city[5])
 
-print(city[-3])
-print(city[3])
+# print(city[-3])
+# print(city[3])
+
+# name = 'Abhishek Thakur'
+# print(name[0:5])
+# print(name[6:])
+# print(name[:5])
+# print(name[::2])
+# print(name[::-1])
+
+# print(len(city))
+# print(len(name))
+
+
+text = 'Hello Python World'
+
+#Case
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.capitalize())
+
+#Strip Whitespace
+print(text.strip())
+print(text.lstrip())
+print(text.rstrip())
+
+#Search
+print('Python' in text)
+print(text.find('Python'))
+print(text.count('l'))
+
+
+#Replace
+print(text.replace('Python', 'AI'))
+
+#Split and Join:
+csv = 'Rahul,22,Bhopal,Enginner'
+parts = csv.split(',')
+print(parts)
+print(parts[0])
+rejoined = ' | '.join(parts)
+print(rejoined)
+
+#Check Content
+print('hello123'.isalnum())
+print('12345'.isdigit())
+print('Python'.isalpha())
+print('  '.isspace())
+
+#Start/End Check
+email = 'student@gmail.com'
+print(email.endswith('.com'))
+print(email.startswith('stu'))
