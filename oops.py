@@ -376,11 +376,26 @@
 #                 )
 # print_exception_tree(BaseException)
 
-class MyZeroDivisionError(ZeroDivisionError):    
-    pass
-def do_the_division(mine):
-    if mine:
-        raise MyZeroDivisionError("some worse news")
-    else:        
-        raise ZeroDivisionError("some bad news")
-do_the_division(False)
+# class MyZeroDivisionError(ZeroDivisionError):    
+#     pass
+
+# def do_the_division(mine):
+#     if mine:
+#         raise MyZeroDivisionError("some worse news")
+#     else:        
+#         raise ZeroDivisionError("some bad news")
+    
+# do_the_division(False)
+
+
+#String:
+
+city = 'Bhopal'
+print(city[0])
+print(city[2])
+
+print(city[-1])
+print(city[5])
+
+print(city[-3])
+print(city[3])
