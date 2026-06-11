@@ -466,6 +466,10 @@ print(f'Count: {1000000:,}')
 
 #Padding and alignment:
 print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')
+print(f'hello{name:^10}')
+print(f'hello{name:>10}')
+print(f'hello{name:<10}')
+print(f'hello{name:*^11}')
 
 #Expressions inside {}
 price, gst = 500, 0.18

@@ -403,4 +403,18 @@
 # else:
 #     print("Not Armstrong Number")                
 
+string = "Hello, How are you doing today ?"
+vowel = ['a', 'e', 'i', 'o', 'u']
+count = 0
+lower_string = string.lower()
+
+for i in lower_string:
+    if i in vowel:
+        count += 1
+        
+print(f"Total vowels: {count}")
+
+
+
+      
  
