@@ -453,24 +453,24 @@
 # print(email.startswith('stu'))
 
 
-#F Strings:
-name, marks, rank = 'Anita' , 92.567, 3
+# #F Strings:
+# name, marks, rank = 'Anita' , 92.567, 3
 
-#Basic
-print(f'Hello, {name}!')
+# #Basic
+# print(f'Hello, {name}!')
 
-#Format numbers
-print(f'Marks: {marks:.2f}')
-print(f'Marks: {marks:.0f}')
-print(f'Count: {1000000:,}')
+# #Format numbers
+# print(f'Marks: {marks:.2f}')
+# print(f'Marks: {marks:.0f}')
+# print(f'Count: {1000000:,}')
 
-#Padding and alignment:
-print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')
-print(f'hello{name:^10}')
-print(f'hello{name:>10}')
-print(f'hello{name:<10}')
-print(f'hello{name:*^11}')
+# #Padding and alignment:
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')
+# print(f'hello{name:^10}')
+# print(f'hello{name:>10}')
+# print(f'hello{name:<10}')
+# print(f'hello{name:*^11}')
 
-#Expressions inside {}
-price, gst = 500, 0.18
-print(f'price:Rs.{price} | GST:Rs.{price*gst:2f} | Total:RS.{price*(1+gst):.2f}')
+# #Expressions inside {}
+# price, gst = 500, 0.18
+# print(f'price:Rs.{price} | GST:Rs.{price*gst:2f} | Total:RS.{price*(1+gst):.2f}')
