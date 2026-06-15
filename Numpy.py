@@ -48,3 +48,6 @@ print(np.std(Marks_2d))
 #Boolean Indexing (Data Filtering)
 arr = np.array([55,82,43,91,67,78,35,88])
 print(arr[arr>70]) 
+
+
+
