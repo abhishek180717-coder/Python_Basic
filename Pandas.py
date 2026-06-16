@@ -43,6 +43,7 @@ df2 = pd.read_csv('students.csv')
 print(df2)
 df2['Name'] = df2['Name'].str.strip()
 df2['Marks'] = df2['Marks'].str.replace('#', '')
+df2['city'] = df2['city'].str.strip('#', '')
 print(df2)
 #Cleaning:
 
