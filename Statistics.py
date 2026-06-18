@@ -34,3 +34,5 @@ outliers = [x for x in salaries if x < lower or x > upper]
 print(f'Outliers: {outliers}')
 print(f'Lower: {lower}')
 print(f'Upper: {upper}')
+
+
