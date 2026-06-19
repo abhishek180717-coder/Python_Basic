@@ -33,3 +33,12 @@ rate_B = conv_B / n_B
 print(f'Version A conersion rate: {rate_A*100:.1f}%')
 print(f'Version B conersion rate: {rate_B*100:.1f}%')
 print(f'Improvement: {(rate_B-rate_A)/rate_A*100:.1f}%')
+
+
+#chi-Square test for Statistical Significance:-
+table = [[conv_A, n_A-conv_A], [conv_B, n_B-conv_B]]
+chi2, p_value, dof, expected = stats.chi2_contingency(table)
+
+print(f'Chi-square: {chi2:.4f}')
+print(f'P_value: {p_value:.4f}')
+print('Resul:', 'SIGNIFICANT - B is better!' if p_value<0.05 else 'NOT significant - could be random')
