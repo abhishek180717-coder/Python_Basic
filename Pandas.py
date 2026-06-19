@@ -13,11 +13,11 @@ print(df.dtypes)
 print(df.describe) 
 
 
-#Select Columns:
+#Select Columns:-
 print("df['Name']: \n", df['Name'])
 print(df[['Name', 'Marks']]) 
 
-#Filter Rows:
+#Filter Rows:-
 print(df[df['Marks'] >= 85])
 print(df[df['City'] == 'Bhopal'])
 print(df[(df['Marks'] >= 80) & (df['City']=='Indore')])
@@ -34,17 +34,18 @@ print(df['Grade'])
 print("________________")
 print(df)
 
-#GroupBy - Like Excel Pivot:
+#GroupBy - Like Excel Pivot:-
 city_avg = df.groupby('City')['Marks'].mean() 
 print(city_avg)
 
-#Read real CSV file:
+#Read real CSV file:-
 df2 = pd.read_csv('students.csv')
 print(df2)
 df2['Name'] = df2['Name'].str.strip()
 df2['Marks'] = df2['Marks'].str.replace('#', '')
 df2['city'] = df2['city'].str.strip('#', '')
 print(df2)
+
 #Cleaning:
 
 df2.to_csv('clean_output.csv', index=False)

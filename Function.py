@@ -1,267 +1,266 @@
-# print("Enter a value: ")
-# a = int(input())
-# print("Enter a value: ")
-# b = int(input())
-# print("Enter a value: ")
-# c = int(input())
+print("Enter a value: ")
+a = int(input())
+print("Enter a value: ")
+b = int(input())
+print("Enter a value: ")
+c = int(input())
 
-# def message():  #calling a function
-#     print("Enter a value: ")
+def message():                        #calling a function
+    print("Enter a value: ")
 
-# message()
-# a = int(input())
-# message()    
-# b = int(input())
-# message()    
-# c = int(input()) 
+message()
+a = int(input())
+message()    
+b = int(input())
+message()    
+c = int(input()) 
 
-# print("We start here.")
-# message()
-# print("We end here.") 
-# def message():
-#     print("Enter a value: ")
+print("We start here.")
+message()
+print("We end here.") 
+def message():
+    print("Enter a value: ")
 
 
-# def message():
-#     print("Enter a value:")
+def message():
+    print("Enter a value:")
     
-# print("We start here.")
-# message()
-# print("We end here.")
-# def message():
-#     print("Enter a value: ")
+print("We start here.")
+message()
+print("We end here.")
+def message():
+    print("Enter a value: ")
     
     
-# def message():
-#     print("Enter a value:")
-# print("We start here.")
-# print(message)
-# message()
-# print("We end here.")
+def message():
+    print("Enter a value:")
+print("We start here.")
+print(message)
+message()
+print("We end here.")
         
-# def message():
-#     print("Enter a value: ")
-#     temp = int(input())
-#     return temp
+def message():
+    print("Enter a value: ")
+    temp = int(input())
+    return temp
 
-# print("step 1")
-# a = message()
+print("step 1")
+a = message()
 
-# print("step 2")
-# b = message()
+print("step 2")
+b = message()
    
-# print("step 3")
-# c = message()
+print("step 3")
+c = message()
 
-# print("a:", a)
-# print("b:", b)
-# print("c:", c)
+print("a:", a)
+print("b:", b)
+print("c:", c)
 
-# def hello(n):
-#     print("Hello,", n)
+def hello(n):
+    print("Hello,", n)
     
-# name = input("Enter a name:")
-# hello(name)
+name = input("Enter a name:")
+hello(name)
 
-# def message(number):
-#     print("Enter a number:", number)
-# number = 1234
-# message(1)
-# print(number)
+def message(number):
+    print("Enter a number:", number)
+number = 1234
+message(1)
+print(number)
 
-# def message(what, number):
-#     print("Enter", what, "number", number)
+def message(what, number):
+    print("Enter", what, "number", number)
     
-# message("telephone", 11)
-# message("price", 5)
-# message("number", "number")
+message("telephone", 11)
+message("price", 5)
+message("number", "number")
 
-# def message(what, number):
-#     print("Enter", what, "number", number)
+def message(what, number):
+    print("Enter", what, "number", number)
     
-# message("telephone", 11)
-# message(11, "telephone")
-# message("price", 5)
-# message("number", "number")
+message("telephone", 11)
+message(11, "telephone")
+message("price", 5)
+message("number", "number")
 
-# def introduction(first_name, last_name):
-#     print("Hello, My name is", first_name, last_name)
+def introduction(first_name, last_name):
+    print("Hello, My name is", first_name, last_name)
  
-# introduction("Luke", "Skywalker")
-# introduction("Jesse", "Quick")
-# introduction("Clark", "Kent")
+introduction("Luke", "Skywalker")
+introduction("Jesse", "Quick")
+introduction("Clark", "Kent")
 
-# def introduction(first_name, last_name):
-#     print("Hello, my name is", first_name, last_name)
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
     
-# introduction(first_name = "James", last_name = "Bond")
-# introduction(last_name = "Skywalker", first_name = "Luke")
+introduction(first_name = "James", last_name = "Bond")
+introduction(last_name = "Skywalker", first_name = "Luke")
 
-# def adding(a, b, c):
-#     print(a, "+", b, "+", c, "=", a + b + c)
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a + b + c)
     
-# adding(1, 2, 3)
-# adding(c =1, a = 2, b = 3)
-# adding(3, c = 1, b = 2)
-# adding(1, a = 2, b = 3)
+adding(1, 2, 3)
+adding(c =1, a = 2, b = 3)
+adding(3, c = 1, b = 2)
+adding(1, a = 2, b = 3)
 
-# def happy_new_year(wishes = True):
-#     print("Three...")
-#     print("Two...")
-#     print("One...")
-#     if not wishes:
-#         return
-#     print("Happy New Year!")
-# happy_new_year()
-
-
-# happy_new_year(False)     
-
-# def boring_function():
-#     print("'Boredom Mode' ON.")
-#     return 123
-
-# print("This lesson is interesting!")
-# boring_function()
-# print("This lesson is boring...")  
-
-# def checkMyVar(variable):
-#     if (variable == 10):
-#         print("Variable is 10")
-#         return 2
-#     else:
-#         print("Variable is not up to the mark")
-#         return
-# print(checkMyVar(5)) 
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    print("Happy New Year!")
+happy_new_year()
 
 
-# def chechMyVar(variable):
-#     if (variable == 10):
-#         print("Variable is 10")
-#         return 2
-#     else:
-#         print("Variable is not up to the mark")
-#         return
+happy_new_year(False)     
+
+def boring_function():
+    print("'Boredom Mode' ON.")
+    return 123
+
+print("This lesson is interesting!")
+boring_function()
+print("This lesson is boring...")  
+
+def checkMyVar(variable):
+    if (variable == 10):
+        print("Variable is 10")
+        return 2
+    else:
+        print("Variable is not up to the mark")
+        return
+print(checkMyVar(5)) 
+
+
+def chechMyVar(variable):
+    if (variable == 10):
+        print("Variable is 10")
+        return 2
+    else:
+        print("Variable is not up to the mark")
+        return
     
-# chechMyVar(10)    
-# print()
+chechMyVar(10)    
+print()
 
 
 
-# def list_sum(lst):
-#     sum = 0
+def list_sum(lst):
+    sum = 0
     
-#     for elem in lst:
-#         sum += elem
+    for elem in lst:
+        sum += elem
         
-#     return sum
-# print(list_sum([5, 4, 3, 2, 1]))
+    return sum
+print(list_sum([5, 4, 3, 2, 1]))
 
 
-# def strange_list_fun(n):
-#     strange_list = []
+def strange_list_fun(n):
+    strange_list = []
     
-#     for i in range(0, n):
-#         strange_list.append(i+1)
+    for i in range(0, n):
+        strange_list.append(i+1)
         
-#     return strange_list
-# print(strange_list_fun(5))   
+    return strange_list
+print(strange_list_fun(5))   
 
 
 
-# def strange_list_fun(n):
-#     strange_list = []
+def strange_list_fun(n):
+    strange_list = []
     
-#     for i in range(0, n):
-#         strange_list.insert(0, i+1)
-#         #strange_list.append(i+1)
+    for i in range(0, n):
+        strange_list.insert(0, i+1)
+        #strange_list.append(i+1)
         
-#     return strange_list
-# print(strange_list_fun(5))
+    return strange_list
+print(strange_list_fun(5))
 
 
-# def scope_test():
-#     x = 123
-# scope_test()
-# print(x)
+def scope_test():
+    x = 123
+scope_test()
+print(x)
 
 
-# def my_function():
-#     print("Do I know that variable?", var)
+def my_function():
+    print("Do I know that variable?", var)
     
-# var = 1
-# my_function()
-# print(var)     
+var = 1
+my_function()
+print(var)     
 
-# def mult(x):
-#     var = 7
-#     return x * var
-# var = 3
-# print(mult(7))
+def mult(x):
+    var = 7
+    return x * var
+var = 3
+print(mult(7))
 
-# def my_function():
-#     var = 2
-#     print("Do I know that variable?", var)
-# var = 1
-# my_function()
-# print(var)
+def my_function():
+    var = 2
+    print("Do I know that variable?", var)
+var = 1
+my_function()
+print(var)
 
 
-# def my_function():
-#     global var
-#     var = 2
-#     print("Do I know that variable?", var)
-# var = 1
-# my_function()
-# print(var)
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+var = 1
+my_function()
+print(var)
 
-# var = 2
-# print(var)  #output: 2
+var = 2
+print(var)  #output: 2
 
-# def return_var():
-#     global var
-#     var = 5
-#     return var
+def return_var():
+    global var
+    var = 5
+    return var
 
-# print(return_var())  #output: 5
-# print(var)
+print(return_var())  #output: 5
+print(var)
 
-# def my_function(n):
-#     print("I got", n)
-#     n += 1
-#     print("I have", n)
+def my_function(n):
+    print("I got", n)
+    n += 1
+    print("I have", n)
     
-# var = 1
-# my_function(var)
-# print(var)
+var = 1
+my_function(var)
+print(var)
 
-# def my_function(my_list_1):
-#     print("Print #1:", my_list_1)
-#     print("Print #2:", my_list_2)
-#     my_list_1 = [0, 1]
-#     print("Print #3:", my_list_1)
-#     print("Print #4:", my_list_2)
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_1 = [0, 1]
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
     
-# my_list_2 = [2, 3]
-# my_function(my_list_2)
-# print("Print #5:", my_list_2)
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
 
-# def my_function(my_list_1):
-#     print("Print #1:", my_list_1)
-#     print("Print #2:", my_list_2)
-#     del my_list_1[0]  #Pay attention to this line
-#     print("Print #3:", my_list_1)
-#     print("Print #4:", my_list_2)
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    del my_list_1[0]                   #Pay attention to this line
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
     
-# my_list_2 = [2, 3]
-# my_function(my_list_2)
-# print("Print #5:", my_list_2)
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
 
 
-# def message():
-#     alt = 1
-#     print("Hello, World")
-    
-# print(alt)    
+def message():
+    alt = 1
+    print("Hello, World")
 
+print(alt) 
 

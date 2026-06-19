@@ -19,7 +19,7 @@ plt.figure(figsize=(6,4))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, fmt='.2f')
 plt.title('Correlation Matrix'); plt.show()
 
-#Pearson correlation:
+#Pearson correlation:-
 r,p_value = stats.pearsonr(study, marks)
 print(f'Study-Marks correlation: r={r:.3f}, p={p_value:.4f}')
 print('Interpretation:', 'Strong positive' if r>0.7 else 'Moderate' if r>0.4 else 'Weak')

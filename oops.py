@@ -1,476 +1,476 @@
-# class ThisIsMyFirstClass:
-#     name = "Adtya"
-#     age = 30
+class ThisIsMyFirstClass:
+    name = "Adtya"
+    age = 30
     
-#     def getName(self):
-#         print(self.name)
+    def getName(self):
+        print(self.name)
         
 
-# firstobject = ThisIsMyFirstClass()
-# print(firstobject)
+firstobject = ThisIsMyFirstClass()
+print(firstobject)
 
-# firstobject.getName()
-# print(firstobject.name)
+firstobject.getName()
+print(firstobject.name)
 
-# class Student:
-#     def __init__(self, name, age, gender, grade):
-#         self.name = name
-#         self.age = age
-#         self.gender = gender
-#         self.grade = grade
+class Student:
+    def __init__(self, name, age, gender, grade):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.grade = grade
            
-#     def printDetails(self):
-#         print("Name:", self.name)   
-#         print("Age:", self.age)
-#         print("Gender:", self.gender) 
-#         print("Grade:", self.grade)
+    def printDetails(self):
+        print("Name:", self.name)   
+        print("Age:", self.age)
+        print("Gender:", self.gender) 
+        print("Grade:", self.grade)
     
-# mayur = Student("Mayur Sharma", 25, "Male", "12th")
-# print(mayur)
+mayur = Student("Mayur Sharma", 25, "Male", "12th")
+print(mayur)
 
-# mayur.name = "Mayur Sharma"
-# mayur.age = 25
-# mayur.gender = "Male"
-# mayur.grade = "12th"
+mayur.name = "Mayur Sharma"
+mayur.age = 25
+mayur.gender = "Male"
+mayur.grade = "12th"
 
-#mayur.printDetails()
-# print(mayur.name)
-# print(mayur.age)
-# print(mayur.gender)
-# print(mayur.grade)
+mayur.printDetails()
+print(mayur.name)
+print(mayur.age)
+print(mayur.gender)
+print(mayur.grade)
 
-# class ExampleClass:
-#     counter = 0
-#     def __init__(self, val = 1):
-#         self.__first = val
-#         ExampleClass.counter += 1
+class ExampleClass:
+    counter = 0
+    def __init__(self, val = 1):
+        self.__first = val
+        ExampleClass.counter += 1
         
-# example_object_1 = ExampleClass()     
-# example_object_2 = ExampleClass(2) 
-# example_object_3 = ExampleClass(4)    
+example_object_1 = ExampleClass()     
+example_object_2 = ExampleClass(2) 
+example_object_3 = ExampleClass(4)    
 
-# print(example_object_1.__dict__, example_object_1.counter)
-# print(example_object_2.__dict__, example_object_2.counter)
-# print(example_object_3.__dict__, example_object_3.counter)
+print(example_object_1.__dict__, example_object_1.counter)
+print(example_object_2.__dict__, example_object_2.counter)
+print(example_object_3.__dict__, example_object_3.counter)
 
 
-# class ExampleClass:
-#     counter = 0
-#     def __init__(self, val = 1):
-#         ExampleClass.counter += 1
-#         if val % 2 != 0:
-#             self.a = 1
-#         else:
-#             self.b = 2
+class ExampleClass:
+    counter = 0
+    def __init__(self, val = 1):
+        ExampleClass.counter += 1
+        if val % 2 != 0:
+            self.a = 1
+        else:
+            self.b = 2
         
-# example_object = ExampleClass(1)
-# print(example_object.a)  
-# print(example_object.b) 
+example_object = ExampleClass(1)
+print(example_object.a)  
+print(example_object.b) 
 
 
-# class ExampleClass:
-#     counter = 0
-#     def __init__(self, val = 1):
-#         ExampleClass.counter += 1
-#         if val % 2 != 0:
-#             self.a = 1
-#         else:
-#             self.b = 1
+class ExampleClass:
+    counter = 0
+    def __init__(self, val = 1):
+        ExampleClass.counter += 1
+        if val % 2 != 0:
+            self.a = 1
+        else:
+            self.b = 1
             
-# example_object = ExampleClass(2)
+example_object = ExampleClass(2)
 
-# try:
-#     print("a = ",example_object.a)
-# except AttributeError:
-#     try:
-#         print("b =",example_object.b) 
-#     except AttributeError:
-#         print("The error has occured! Sliently passing it!")               
+try:
+    print("a = ",example_object.a)
+except AttributeError:
+    try:
+        print("b =",example_object.b) 
+    except AttributeError:
+        print("The error has occured! Sliently passing it!")               
 
    
-# class ExampleClass:
-#     counter = 0
-#     def __init__(self, val = 1):
-#         ExampleClass.counter += 1
-#         if val % 2 != 0:
-#             self.a = 1
-#         else:
-#             self.b = 1
+class ExampleClass:
+    counter = 0
+    def __init__(self, val = 1):
+        ExampleClass.counter += 1
+        if val % 2 != 0:
+            self.a = 1
+        else:
+            self.b = 1
             
-# example_object = ExampleClass(2)     
+example_object = ExampleClass(2)     
 
-# if hasattr(example_object,'a'):
-#     print("a =", example_object.a)
+if hasattr(example_object,'a'):
+    print("a =", example_object.a)
     
-# if hasattr(example_object, 'b'):
-#     print("b =", example_object.b)    
+if hasattr(example_object, 'b'):
+    print("b =", example_object.b)    
          
          
 
-# class ExampleClass:
-#     counter = 0
-#     def __init__(self, val = 1):
-#         ExampleClass.counter += 1
-#         if val % 2 != 0:
-#             self.a = 1
-#         else:
-#             self.b = 1
+class ExampleClass:
+    counter = 0
+    def __init__(self, val = 1):
+        ExampleClass.counter += 1
+        if val % 2 != 0:
+            self.a = 1
+        else:
+            self.b = 1
             
-# example_object = ExampleClass(2)     
+example_object = ExampleClass(2)     
 
-# if hasattr(example_object,'a'):
-#     print("a =", example_object.a)
+if hasattr(example_object,'a'):
+    print("a =", example_object.a)
     
-# if hasattr(example_object, 'b'):
-#     print("b =", example_object.b) 
+if hasattr(example_object, 'b'):
+    print("b =", example_object.b) 
       
             
-# print(hasattr(ExampleClass, 'b'))
-# print(hasattr(ExampleClass, 'a'))  
+print(hasattr(ExampleClass, 'b'))
+print(hasattr(ExampleClass, 'a'))  
 
 
-# class ExampleClass:
-#     a = 1
-#     counter = 0
-#     def __init__(self, val = 1):
-#         ExampleClass.counter += 1
-#         if val % 2 != 0:
-#             self.a = 1
-#         else:
-#             self.b = 1
+class ExampleClass:
+    a = 1
+    counter = 0
+    def __init__(self, val = 1):
+        ExampleClass.counter += 1
+        if val % 2 != 0:
+            self.a = 1
+        else:
+            self.b = 1
             
-# example_object = ExampleClass(2)     
+example_object = ExampleClass(2)     
 
-# if hasattr(example_object,'a'):
-#     print("a =", example_object.a)
+if hasattr(example_object,'a'):
+    print("a =", example_object.a)
     
-# if hasattr(example_object, 'b'):
-#     print("b =", example_object.b) 
+if hasattr(example_object, 'b'):
+    print("b =", example_object.b) 
     
-# print(hasattr(ExampleClass, 'b'))
-# print(hasattr(ExampleClass, 'a'))               
+print(hasattr(ExampleClass, 'b'))
+print(hasattr(ExampleClass, 'a'))               
 
-# class Python:
-#     population = 1
-#     victims = 0
-#     def __init__(self):
-#         self.length_ft = 3
-#         self.__venomous = False
+class Python:
+    population = 1
+    victims = 0
+    def __init__(self):
+        self.length_ft = 3
+        self.__venomous = False
         
-# myObj = Python()
-# print("myObj.population:", myObj.population)
-# print("myObj.victims:", myObj.victims)
-# print("muObj.length_ft:", myObj.length_ft)
-# print("myObj.venomous:", myObj._Python__venomous)
-#print("myObj.__venomous:", myObj.__venomous)
-#print("myObj.venomous:", myObj.venomous)
+myObj = Python()
+print("myObj.population:", myObj.population)
+print("myObj.victims:", myObj.victims)
+print("muObj.length_ft:", myObj.length_ft)
+print("myObj.venomous:", myObj._Python__venomous)
+print("myObj.__venomous:", myObj.__venomous)
+print("myObj.venomous:", myObj.venomous)
 
-#Name Mangling in Methods:
-# class Classy:
-#     def visible(self):
-#         print("visible")
+Name Mangling in Methods:
+class Classy:
+    def visible(self):
+        print("visible")
         
-#     def __hidden(self):
-#         print("hidden")
+    def __hidden(self):
+        print("hidden")
         
-# obj = Classy()
-# obj.visible()
-# try:  
-#     obj,__hidden()
-# except:
-#     print("Failed")
-# obj._Classy__hidden()                
+obj = Classy()
+obj.visible()
+try:  
+    obj,__hidden()
+except:
+    print("Failed")
+obj._Classy__hidden()                
 
 
-# obj = Classy()
-# print(type(obj))
-# print(type(obj).__name__)
+obj = Classy()
+print(type(obj))
+print(type(obj).__name__)
 
-#Inheritance in OOPS:
+Inheritance in OOPS:
   
-# class Vehicle:
-#     pass
+class Vehicle:
+    pass
 
-# class LandVehicle(Vehicle):
-#     pass
+class LandVehicle(Vehicle):
+    pass
 
-# class TrackedVehicle(LandVehicle):
-#     pass
+class TrackedVehicle(LandVehicle):
+    pass
 
-# my_vehicle = Vehicle()
-# my_land_vehicle = LandVehicle()
-# my_tracked_vehicle = TrackedVehicle()
+my_vehicle = Vehicle()
+my_land_vehicle = LandVehicle()
+my_tracked_vehicle = TrackedVehicle()
 
-# for obj in [my_vehicle, my_land_vehicle, my_tracked_vehicle]:
-#     for cls in [ Vehicle, LandVehicle, TrackedVehicle]:
-#         print(isinstance(obj, cls), end="\t")
-#     print() 
+for obj in [my_vehicle, my_land_vehicle, my_tracked_vehicle]:
+    for cls in [ Vehicle, LandVehicle, TrackedVehicle]:
+        print(isinstance(obj, cls), end="\t")
+    print() 
 
-# class SampleClass:
-#     def __init__(self, val):
-#         self.val = val
+class SampleClass:
+    def __init__(self, val):
+        self.val = val
         
-# object_1 = SampleClass(0)        
-# object_2 = SampleClass(2)            
-# object_3 = object_1
-# object_3.val += 1
+object_1 = SampleClass(0)        
+object_2 = SampleClass(2)            
+object_3 = object_1
+object_3.val += 1
 
-# print(object_1 is object_2)
-# print(object_2 is object_3)   
-# print(object_3 is object_1)
-# print(object_1.val, object_2.val, object_3.val)
+print(object_1 is object_2)
+print(object_2 is object_3)   
+print(object_3 is object_1)
+print(object_1.val, object_2.val, object_3.val)
 
-# string_1 = "Marry had a little "
-# string_2 = "Marry had a little lamb"
-# string_1 += "lamb"
+string_1 = "Marry had a little "
+string_2 = "Marry had a little lamb"
+string_1 += "lamb"
 
-# print(string_1 == string_2, string_1 is string_2)
+print(string_1 == string_2, string_1 is string_2)
 
 
-# class Super:
-#     def __init__(self, name):
-#         self.name = name
+class Super:
+    def __init__(self, name):
+        self.name = name
         
-#     def __str__(self):
-#         return "My name is " + self.name + "."
+    def __str__(self):
+        return "My name is " + self.name + "."
     
-# class Sub(Super):
-#     def __init__(self, name):
-#         Super.__init__(self, name)
+class Sub(Super):
+    def __init__(self, name):
+        Super.__init__(self, name)
         
-# obj = Sub("Andy")
-# print(obj)  
+obj = Sub("Andy")
+print(obj)  
 
       
                 
-# class Super:
-#     def __init__(self, name):
-#         self.name = name
+class Super:
+    def __init__(self, name):
+        self.name = name
         
-#     def __str__(self):
-#         return "My name is " + self.name + "."
+    def __str__(self):
+        return "My name is " + self.name + "."
     
-# class Sub(Super):
-#     def __init__(self, name):
-#         super().__init__(name)
+class Sub(Super):
+    def __init__(self, name):
+        super().__init__(name)
         
-# obj = Sub("Andy")
-# print(obj)      
+obj = Sub("Andy")
+print(obj)      
 
 
-# class SuperA:
-#     var_a = 10
-#     def fun_a(self):
-#         return 11
+class SuperA:
+    var_a = 10
+    def fun_a(self):
+        return 11
     
-# class SuperB:
-#     var_b = 20
-#     def fun_b(self):
-#         return 21
+class SuperB:
+    var_b = 20
+    def fun_b(self):
+        return 21
     
-# class Sub(SuperA, SuperB):
-#     pass
+class Sub(SuperA, SuperB):
+    pass
 
-# obj = Sub()
-# print(obj.var_a, obj.fun_a())          
-# print(obj.var_b, obj.fun_b())  
+obj = Sub()
+print(obj.var_a, obj.fun_a())          
+print(obj.var_b, obj.fun_b())  
 
 
-# class Level1:
-#     var = 100
-#     def fun(self):
-#         return 101
+class Level1:
+    var = 100
+    def fun(self):
+        return 101
     
-# class Level2(Level1):
-#     var = 200
-#     def fun(self):
-#         return 201
+class Level2(Level1):
+    var = 200
+    def fun(self):
+        return 201
     
-# class Level3(Level2):
-#     pass
+class Level3(Level2):
+    pass
 
-# obj = Level3()
-# print(obj.var, obj.fun())
+obj = Level3()
+print(obj.var, obj.fun())
 
 
-# class Left:
-#     var = "L"
-#     var_left = "LL"
-#     def fun(self):
-#         return "Left"
-# class Right:
-#     var = "R"
-#     var_right = "RR"
-#     def fun(self):
-#         return "Right"
-# class Sub(Left, Right):   #left to right approach
-#     pass
-# obj = Sub()
-# print(obj.var, obj.var_left, obj.var_right,obj.fun()) 
+class Left:
+    var = "L"
+    var_left = "LL"
+    def fun(self):
+        return "Left"
+class Right:
+    var = "R"
+    var_right = "RR"
+    def fun(self):
+        return "Right"
+class Sub(Left, Right):        #left to right approach
+    pass
+obj = Sub()
+print(obj.var, obj.var_left, obj.var_right,obj.fun()) 
 
-#Polymorphism in OOPS:
+Polymorphism in OOPS:
 
-# class One:
-#     def do_it(self):
-#         print("do_it from One")
+class One:
+    def do_it(self):
+        print("do_it from One")
         
-#     def doanything(self):
-#         self.do_it()
+    def doanything(self):
+        self.do_it()
         
-# class Two(One):
-#     def do_it(self):
-#         print("do_it from Two")
+class Two(One):
+    def do_it(self):
+        print("do_it from Two")
         
-# one = One()
-# two = Two()
-# one.doanything()
-# two.doanything() 
+one = One()
+two = Two()
+one.doanything()
+two.doanything() 
 
                                   
 
-#Exceptions in OOPS:
-# def reciprocal(n):
-#     try:
-#         n = 1 / n
-#     except ZeroDivisionError:
-#         print("Division failed")
-#         return None
-#     else:
-#         print("Everything went fine")
-#         return n
+#Exceptions in OOPS:-
+def reciprocal(n):
+    try:
+        n = 1 / n
+    except ZeroDivisionError:
+        print("Division failed")
+        return None
+    else:
+        print("Everything went fine")
+        return n
     
-# print("___________")
-# print("reciprocal(2): ", reciprocal(2))
-# print("______________")
-# print("reciprocal(0): ", reciprocal(0))
-# print("___________ ") 
+print("___________")
+print("reciprocal(2): ", reciprocal(2))
+print("______________")
+print("reciprocal(0): ", reciprocal(0))
+print("___________ ") 
 
-# def reciprocal(n):
-#     try:
-#         n = 1 / n
-#     except ZeroDivisionError:
-#         print("Division failed")
-#     else:
-#         print("Everything went fine")
-#     finally:
-#         print("This is always executed")    
-#     return n
+def reciprocal(n):
+    try:
+        n = 1 / n
+    except ZeroDivisionError:
+        print("Division failed")
+    else:
+        print("Everything went fine")
+    finally:
+        print("This is always executed")    
+    return n
     
-# print("reciprocal(2):", reciprocal(2))
-# print("reciprocal(0):", reciprocal(0))  
+print("reciprocal(2):", reciprocal(2))
+print("reciprocal(0):", reciprocal(0))  
 
-# try:
-#     i = int("Hello!")
-# except Exception as e:
-#     print(e)
-#     print(e.__str__())      
+try:
+    i = int("Hello!")
+except Exception as e:
+    print(e)
+    print(e.__str__())      
 
-# def print_exception_tree(thisclass, nest = 0):
-#     if nest > 1:
-#         print("   |" * (nest - 1), end="")
-#     if nest > 0:
-#         print("   +---", end="")
-#     print(thisclass.__name__)
-#     for subclass in thisclass.__subclasses__():
-#         print_exception_tree(subclass, nest + 1
-#                 )
-# print_exception_tree(BaseException)
+def print_exception_tree(thisclass, nest = 0):
+    if nest > 1:
+        print("   |" * (nest - 1), end="")
+    if nest > 0:
+        print("   +---", end="")
+    print(thisclass.__name__)
+    for subclass in thisclass.__subclasses__():
+        print_exception_tree(subclass, nest + 1
+                )
+print_exception_tree(BaseException)
 
-# class MyZeroDivisionError(ZeroDivisionError):    
-#     pass
+class MyZeroDivisionError(ZeroDivisionError):    
+    pass
 
-# def do_the_division(mine):
-#     if mine:
-#         raise MyZeroDivisionError("some worse news")
-#     else:        
-#         raise ZeroDivisionError("some bad news")
+def do_the_division(mine):
+    if mine:
+        raise MyZeroDivisionError("some worse news")
+    else:        
+        raise ZeroDivisionError("some bad news")
     
-# do_the_division(False)
+do_the_division(False)
 
 
-#String:
+String:-
 
-# city = 'Bhopal'
-# print(city[0])
-# print(city[2])
+city = 'Bhopal'
+print(city[0])
+print(city[2])
 
-# print(city[-1])
-# print(city[5])
+print(city[-1])
+print(city[5])
 
-# print(city[-3])
-# print(city[3])
+print(city[-3])
+print(city[3])
 
-# name = 'Abhishek Thakur'
-# print(name[0:5])
-# print(name[6:])
-# print(name[:5])
-# print(name[::2])
-# print(name[::-1])
+name = 'Abhishek Thakur'
+print(name[0:5])
+print(name[6:])
+print(name[:5])
+print(name[::2])
+print(name[::-1])
 
-# print(len(city))
-# print(len(name))
-
-
-# text = 'Hello Python World'
-
-# #Case
-# print(text.upper())
-# print(text.lower())
-# print(text.title())
-# print(text.capitalize())
-
-# #Strip Whitespace
-# print(text.strip())
-# print(text.lstrip())
-# print(text.rstrip())
-
-# #Search
-# print('Python' in text)
-# print(text.find('Python'))
-# print(text.count('l'))
+print(len(city))
+print(len(name))
 
 
-# #Replace
-# print(text.replace('Python', 'AI'))
+text = 'Hello Python World'
 
-# #Split and Join:
-# csv = 'Rahul,22,Bhopal,Enginner'
-# parts = csv.split(',')
-# print(parts)
-# print(parts[0])
-# rejoined = ' | '.join(parts)
-# print(rejoined)
+#Case:-
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.capitalize())
 
-# #Check Content
-# print('hello123'.isalnum())
-# print('12345'.isdigit())
-# print('Python'.isalpha())
-# print('  '.isspace())
+#Strip Whitespace:-
+print(text.strip())
+print(text.lstrip())
+print(text.rstrip())
 
-# #Start/End Check
-# email = 'student@gmail.com'
-# print(email.endswith('.com'))
-# print(email.startswith('stu'))
+#Search:-
+print('Python' in text)
+print(text.find('Python'))
+print(text.count('l'))
 
 
-# #F Strings:
-# name, marks, rank = 'Anita' , 92.567, 3
+#Replace:-
+print(text.replace('Python', 'AI'))
 
-# #Basic
-# print(f'Hello, {name}!')
+#Split and Join:-
+csv = 'Rahul,22,Bhopal,Enginner'
+parts = csv.split(',')
+print(parts)
+print(parts[0])
+rejoined = ' | '.join(parts)
+print(rejoined)
 
-# #Format numbers
-# print(f'Marks: {marks:.2f}')
-# print(f'Marks: {marks:.0f}')
-# print(f'Count: {1000000:,}')
+#Check Content:-
+print('hello123'.isalnum())
+print('12345'.isdigit())
+print('Python'.isalpha())
+print('  '.isspace())
 
-# #Padding and alignment:
-# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')
-# print(f'hello{name:^10}')
-# print(f'hello{name:>10}')
-# print(f'hello{name:<10}')
-# print(f'hello{name:*^11}')
+#Start/End Check:-
+email = 'student@gmail.com'
+print(email.endswith('.com'))
+print(email.startswith('stu'))
 
-# #Expressions inside {}
-# price, gst = 500, 0.18
-# print(f'price:Rs.{price} | GST:Rs.{price*gst:2f} | Total:RS.{price*(1+gst):.2f}')
+
+#F Strings:-
+name, marks, rank = 'Anita' , 92.567, 3
+
+#Basic:-
+print(f'Hello, {name}!')
+
+#Format numbers:-
+print(f'Marks: {marks:.2f}')
+print(f'Marks: {marks:.0f}')
+print(f'Count: {1000000:,}')
+
+#Padding and alignment:-
+print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')
+print(f'hello{name:^10}')
+print(f'hello{name:>10}')
+print(f'hello{name:<10}')
+print(f'hello{name:*^11}')
+
+#Expressions inside {}:-
+price, gst = 500, 0.18
+print(f'price:Rs.{price} | GST:Rs.{price*gst:2f} | Total:RS.{price*(1+gst):.2f}')
