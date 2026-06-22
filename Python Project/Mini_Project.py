@@ -29,3 +29,28 @@ elif bmi < 30:
     print("Category: Overweight")
 else:
     print("Category: Obese")
+    
+    
+    
+    
+    
+
+
+
+
+# #Name Card Program:-
+
+# first_name = input("Enter First Name: ")
+# last_name = input("Enter Last Name: ")
+# age = input("Enter Age: ")
+# city = input("Enter City: ")
+# skill = input("Enter Favourite Skill: ")
+
+# name = first_name + " " + last_name
+
+# print("\n" + "-" * 50)
+# print(f"| {'NAME':<10}: {name:<33}|")
+# print(f"| {'AGE':<10}: {age + ' years':<33}|")
+# print(f"| {'CITY':<10}: {city:<33}|")
+# print(f"| {'SKILL':<10}: {skill:<33}|")
+# print("-" * 50)
