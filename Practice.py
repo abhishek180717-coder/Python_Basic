@@ -403,18 +403,34 @@
 # else:
 #     print("Not Armstrong Number")                
 
-string = "Hello, How are you doing today ?"
-vowel = ['a', 'e', 'i', 'o', 'u']
-count = 0
-lower_string = string.lower()
+# string = "Hello, How are you doing today ?"
+# vowel = ['a', 'e', 'i', 'o', 'u']
+# count = 0
+# lower_string = string.lower()
 
-for i in lower_string:
-    if i in vowel:
-        count += 1
+# for i in lower_string:
+#     if i in vowel:
+#         count += 1
         
-print(f"Total vowels: {count}")
+# print(f"Total vowels: {count}")
 
 
+# #Name Card Program:-
+
+# first_name = input("Enter First Name: ")
+# last_name = input("Enter Last Name: ")
+# age = input("Enter Age: ")
+# city = input("Enter City: ")
+# skill = input("Enter Favourite Skill: ")
+
+# name = first_name + " " + last_name
+
+# print("\n" + "-" * 50)
+# print(f"| {'NAME':<10}: {name:<33}|")
+# print(f"| {'AGE':<10}: {age + ' years':<33}|")
+# print(f"| {'CITY':<10}: {city:<33}|")
+# print(f"| {'SKILL':<10}: {skill:<33}|")
+# print("-" * 50)
 
       
  
