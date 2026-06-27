@@ -79,59 +79,59 @@ print("\nCity Wise Average")
 print(df.groupby("City")["Average"].mean())
 
 
-# #Step5: Charts:-
-# # 1. Bar Chart:-
-# city_avg = df.groupby("City")["Average"].mean()
+#Step5: Charts:-
+# 1. Bar Chart:-
+city_avg = df.groupby("City")["Average"].mean()
 
-# plt.figure(figsize=(6,4))
-# city_avg.plot(kind="bar")
-# plt.title("City Average Marks")
-# plt.ylabel("Average")
-# plt.show()
+plt.figure(figsize=(6,4))
+city_avg.plot(kind="bar")
+plt.title("City Average Marks")
+plt.ylabel("Average")
+plt.show()
 
-# # 2. Pie Chart:-
-# plt.figure(figsize=(6,6))
-# df["Grade"].value_counts().plot(kind="pie", autopct="%1.1f%%")
-# plt.title("Grade Distribution")
-# plt.ylabel("")
-# plt.show()
+# 2. Pie Chart:-
+plt.figure(figsize=(6,6))
+df["Grade"].value_counts().plot(kind="pie", autopct="%1.1f%%")
+plt.title("Grade Distribution")
+plt.ylabel("")
+plt.show()
 
-# # 3. Scatter Plot:-
-# plt.figure(figsize=(6,4))
-# plt.scatter(df["StudyHours"], df["Average"])
-# plt.xlabel("Study Hours")
-# plt.ylabel("Average Marks")
-# plt.title("Study Hours vs Average Marks")
-# plt.show()
+# 3. Scatter Plot:-
+plt.figure(figsize=(6,4))
+plt.scatter(df["StudyHours"], df["Average"])
+plt.xlabel("Study Hours")
+plt.ylabel("Average Marks")
+plt.title("Study Hours vs Average Marks")
+plt.show()
 
-# # 4. Line Chart:-
-# df_sorted = df.sort_values("Rank")
+# 4. Line Chart:-
+df_sorted = df.sort_values("Rank")
 
-# plt.figure(figsize=(7,4))
-# plt.plot(df_sorted["Rank"], df_sorted["Average"], marker="o")
-# plt.xlabel("Rank")
-# plt.ylabel("Average")
-# plt.title("Rank vs Average")
-# plt.grid(True)
-# plt.show()
+plt.figure(figsize=(7,4))
+plt.plot(df_sorted["Rank"], df_sorted["Average"], marker="o")
+plt.xlabel("Rank")
+plt.ylabel("Average")
+plt.title("Rank vs Average")
+plt.grid(True)
+plt.show()
 
-# # 5. Heatmap:-
-# plt.figure(figsize=(6,5))
-# sns.heatmap(df[subjects].corr(), annot=True, cmap="coolwarm")
-# plt.title("Subject Correlation")
-# plt.show()
+# 5. Heatmap:-
+plt.figure(figsize=(6,5))
+sns.heatmap(df[subjects].corr(), annot=True, cmap="coolwarm")
+plt.title("Subject Correlation")
+plt.show()
 
 
-# # Step 6: Save Files:-
-# df.to_csv("cleaned_students.csv", index=False)
+# Step 6: Save Files:-
+df.to_csv("cleaned_students.csv", index=False)
 
-# summary = pd.DataFrame({
-#     "Class Average":[df["Average"].mean()],
-#     "Topper":[topper["Name"]],
-#     "Failure Rate":[failure_rate]
-# })
+summary = pd.DataFrame({
+    "Class Average":[df["Average"].mean()],
+    "Topper":[topper["Name"]],
+    "Failure Rate":[failure_rate]
+})
 
-# summary.to_csv("summary_report.csv", index=False)
+summary.to_csv("summary_report.csv", index=False)
 
 print("\nProject Completed Successfully!")
 print("Files Saved:")
