@@ -10,7 +10,7 @@ np.random.seed(42)
 w1 = np.random.randn(2,4) * 0.5
 w2 = np.random.randn(4,1) * 0.5
 
-lr = 0.5             #Learning Rate
+lr = 0.5                               #Learning Rate
 losses = []
 
 for each in range(10000):
