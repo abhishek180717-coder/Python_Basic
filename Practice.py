@@ -433,4 +433,21 @@
 # print("-" * 50)
 
       
+      
+      
+      
+      
+      
+# Calculator in Python (100 Days of Code with Harry):-
+
+a = 15
+b = 7
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a ** b)
+print(a / b)
+print(a // b)
+print(a % b)      
  
