@@ -22,8 +22,21 @@
 
 
 #Function:-
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
-result = add(10, 20)
-print(result)
+# result = add(10, 20)
+# print(result)
+
+
+#Day-4:- (Pandas)
+import pandas as pd
+
+data = {
+    "Name": ["Rahul", "Aman", "Priya", "Neha"],
+    "Marks": [78, 65, 92, 84]
+}
+
+df = pd.DataFrame(data)
+
+print(df)

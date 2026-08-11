@@ -49,12 +49,10 @@
 # print("Sum = ", Total)                  
 
 
-#Day-3:-
-marks = [78, 85, 92, 67, 88, 95, 73]
+# #Day-3:-
+# marks = [78, 85, 92, 67, 88, 95, 73]
 
-marks = [78, 85, 92, 67, 88, 95, 73]
-
-print("Maximum Marks =", max(marks))
-print("Minimum Marks =", min(marks))
-print("Total Marks =", sum(marks))
-print("Average Marks =", sum(marks) / len(marks))
+# print("Maximum Marks =", max(marks))
+# print("Minimum Marks =", min(marks))
+# print("Total Marks =", sum(marks))
+# print("Average Marks =", sum(marks) / len(marks))
