@@ -126,15 +126,58 @@ print(newdf)
 # newdf = newdf['B'].isnull()                            #Return True in column B 
 # print(newdf)
 
-newdf.loc[:, ['B']] = 30                           #Return 30 in all column B
-print(newdf)
+# newdf.loc[:, ['B']] = 30                           #Return 30 in all column B
+# print(newdf)
+
+# df = pd.DataFrame(  
+#         {
+#          "name": ["Alfred", "Batman", "Catwoman"],
+#          "toy": [np.nan, "Batmobile", "Bullwhip"],
+#          "born": [pd.NaT, pd.Timestamp("1940-04-25"), pd.NaT],
+#     }
+# )
+# df = df.dropna()                           #Delete NA value 
+# print(df)
+
+
+
+# df = pd.DataFrame(  
+#         {
+#          "name": ["Alfred", "Batman", "Catwoman"],
+#          "toy": [np.nan, np.nan, np.nan],
+#          "born": [pd.NaT, pd.Timestamp("1940-04-25"), pd.NaT],
+#     }
+# )
+# df = df.dropna(how = 'all', axis=1)           #for delete nan value in column
+# print(df)
+
 
 df = pd.DataFrame(  
         {
-         "name": ["Alfred", "Batman", "Catwoman"],
+         "name": ["Alfred", "Batman", "Alfred"],
          "toy": [np.nan, "Batmobile", "Bullwhip"],
          "born": [pd.NaT, pd.Timestamp("1940-04-25"), pd.NaT],
     }
 )
-df = df.dropna()
-print(df)
+# df = df.drop_duplicates(subset=['name'], keep='first')    #for delete duplicate name, Ex Alfred are 2 times in Dataframe 
+print(df)                                                 #for (keep=first used for first value, keep=last used for last value, keep=False used for remove both value)
+
+# print(df.shape)          #show shape (2, 3)
+
+# df.info()                #for all information about DataFrame
+# print(df)
+
+# df['born'].value_counts(dropna = True)
+
+# df = df.notnull()         #NaN=False ho jata hai baki True
+# print(df)
+
+
+# df = df.isnull()            #NaN=True ho jata hai baki False
+# print(df)
+
+
+import pandas as pd
+data = pd.read_csv('Friends.csv')
+data.iloc[0,1] = 35
+print(data)
