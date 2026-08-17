@@ -1,5 +1,5 @@
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 
 # 
 # #for DataFrame to CSV File convert
@@ -23,9 +23,9 @@ import pandas as pd
 # print(Ser)
 # print(type(Ser))
 
-newdf = pd.DataFrame(np.random.rand(100, 5), index = np.arange(100))
-print(newdf)
-print(type(newdf))
+# newdf = pd.DataFrame(np.random.rand(100, 5), index = np.arange(100))
+# print(newdf)
+# print(type(newdf))
 
 # print(newdf.head())               #Show Start 5 Rows
 # print(newdf.head)               #Show all Rows
@@ -58,8 +58,8 @@ print(type(newdf))
 # print(newdf.head(2))
 
 
-newdf.columns = list("ABCDE")         #For change columns name 
-print(newdf)
+# newdf.columns = list("ABCDE")         #For change columns name 
+# print(newdf)
 
 # newdf.loc[0,'A'] = 6262                #for change number of rows and column
 # print(newdf)
@@ -152,15 +152,15 @@ print(newdf)
 # print(df)
 
 
-df = pd.DataFrame(  
-        {
-         "name": ["Alfred", "Batman", "Alfred"],
-         "toy": [np.nan, "Batmobile", "Bullwhip"],
-         "born": [pd.NaT, pd.Timestamp("1940-04-25"), pd.NaT],
-    }
-)
+# df = pd.DataFrame(  
+#         {
+#          "name": ["Alfred", "Batman", "Alfred"],
+#          "toy": [np.nan, "Batmobile", "Bullwhip"],
+#          "born": [pd.NaT, pd.Timestamp("1940-04-25"), pd.NaT],
+#     }
+# )
 # df = df.drop_duplicates(subset=['name'], keep='first')    #for delete duplicate name, Ex Alfred are 2 times in Dataframe 
-print(df)                                                 #for (keep=first used for first value, keep=last used for last value, keep=False used for remove both value)
+# print(df)                                                 #for (keep=first used for first value, keep=last used for last value, keep=False used for remove both value)
 
 # print(df.shape)          #show shape (2, 3)
 
@@ -177,7 +177,33 @@ print(df)                                                 #for (keep=first used 
 # print(df)
 
 
+# import pandas as pd          
+# data = pd.read_csv('Friends.csv')
+# data.iloc[0,1] = 35             #row0 or column1 place per value change karke 35 likhna
+# print(data)
+
+#Day 5 (Pandas Data Analytics):-
+
+#(Select, Filter & Data Analysis):
+
 import pandas as pd
-data = pd.read_csv('Friends.csv')
-data.iloc[0,1] = 35
-print(data)
+
+data = {
+    "Name": ["Rahul", "Aman", "Priya", "Neha", "Raj", "Simran", "Arjun"],
+    "Age": [20, 21, 20, 22, 21, 20, 22],
+    "Marks": [78, 65, 92, 84, 71, 88, 95]
+}
+
+df = pd.DataFrame(data)
+
+print(df[df["Marks"] >= 80])               #Students with Marks>=80
+
+print(df[df["Marks"] > 70])                #Students with Marks=70
+
+print(df["Marks"].max())                   #Students with Highest Marks
+
+print(df["Marks"].mean())                  #Average of Students Marks
+
+print(df[df["Age"] == 20])                 #Students Whose age is 20
+
+print(df[(df["Marks"] >80) & (df["Age"] == 20)])     #Students Whose age is 20 AND Marks >80
